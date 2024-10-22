@@ -1,3 +1,46 @@
-.fejlec{
-    background-image: url(img/pizza.jpg);
+body{
+    color: rgb(204, 204, 204);
+    background-color: rgb(16, 16, 16);
+    font-family: 'Times New Roman', Times, serif;
 }
+#fejlec{
+    background-image: url(img/pizza.jpg);
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+}
+#pizzak{
+    background-color: rgb(34, 34, 34);
+}
+#menu{
+    background-color: rgb(16, 16, 16);
+}
+#spec{
+    background-color: rgb(34, 34, 34);
+}
+#nyitva{
+    background-color: rgb(16, 16, 16);
+}
+#lablec{
+    background-color: rgb(16, 16, 16);
+}
+h1{
+    color: rgb(255, 255, 255);
+}
+h2{
+    color: rgb(255, 255, 255);
+}
+h3{
+    color: rgb(255, 255, 255);
+}
+img{
+    height: 70px;
+}
+
+/*   34, 34, 34 
+16, 16, 16
+sotet rgb 16 16 16 
+vilaos 34 34 34
+cim 255 255 255
+szoveg 204 204 204 
+*/
