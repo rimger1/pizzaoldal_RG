@@ -2,6 +2,8 @@ body{
     color: rgb(204, 204, 204);
     background-color: rgb(16, 16, 16);
     font-family: 'Times New Roman', Times, serif;
+    margin: 0px;
+    font-size: larger;
 }
 #fejlec{
     background-image: url(img/pizza.jpg);
@@ -9,14 +11,42 @@ body{
     height: 500px;
     background-size: 100vw;
     background-repeat: no-repeat;
-    margin: 0px;
 }
 #pizzak{
     background-color: rgb(34, 34, 34);
+    margin: 0px;
+    height: 300px;
+    padding-top: 60px;
+    line-height: 1.5;
+}
+#pizzakbal{
+    margin: 0;
+    padding: 0;
+    float: left;
+    display: inline;
+    margin-left: 15%;
+    text-align: right;
+}
+#pizzakjobb{
+    margin: 0;
+    padding: 0;
+    float: right;
+    display: inline;
+    margin-right: 20%;
 }
 #menu{
     background-color: rgb(16, 16, 16);
     text-align: center;
+    height: 300px;
+}
+#gombok{
+    margin-top: 40pxs;
+}
+#gomb{
+    list-style-type: none;
+    display: inline;
+    border: solid white 2px;
+    padding: 20px;
 }
 #spec{
     background-color: rgb(34, 34, 34);
@@ -40,18 +70,31 @@ h3{
 img{
     height: 70px;
 }
-li{
-    display: inline;
-}
-ul{
+#menulista{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
     float: right;
 }
+#menupont{
+    display: inline;
+} 
+li a{
+    display: inline;
+    padding: 8px;
+}
 #focim{
-    margin-top: 40px;
-    margin-left: 20px;
     display: inline;
 }
-
+a{
+    color: rgb(204, 204, 204);
+    text-decoration: none;
+}
+#kezdolap{
+    color: rgb(255, 255, 255);
+    display: inline;
+}
 /*   34, 34, 34 
 16, 16, 16
 sotet rgb 16 16 16 
