@@ -1,7 +1,7 @@
 body{
     color: rgb(204, 204, 204);
     background-color: rgb(16, 16, 16);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
     font-size: larger;
 }
@@ -40,16 +40,29 @@ body{
 #menu{
     background-color: rgb(16, 16, 16);
     text-align: center;
-    height: 300px;
+    height: 400px;
+}
+#menuiras{
+    width: 50%;
+    margin: 0 auto;
+}
+#menucim{
+    line-height: 1;
+}
+#menuszoveg{
+    line-height: 1.5;
+    font-size: larger;
 }
 #gombok{
-    margin-top: 40pxs;
+    margin-top: 50px;
 }
 #gomb{
+    color: white;
     list-style-type: none;
     display: inline;
-    border: solid white 2px;
-    padding: 20px;
+    border: solid white 1px;
+    padding: 20px 70px;
+    margin: 0 20px;
 }
 #spec{
     background-color: rgb(34, 34, 34);
@@ -103,7 +116,16 @@ a{
     display: inline;
 }
 @media only screen and (min-width: 992px){
-
+    #pizzak{
+        height: 350px;
+    }
+    #pizzakbal{
+        margin-left: 4%;
+    }
+    #pizzakjobb{
+        width: 55%;
+        margin-right: 10%;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px){
@@ -114,14 +136,18 @@ a{
         float: left;
         display: inline;
         text-align: right;
-        margin-left: 4%;
+        margin-left: -5%;
+        max-width: 250px;
     }    
     #pizzakjobb{
         float: right;
         width: 55%;
         display: inline;
         text-align: left;
-        margin-right: 4%;
+        margin-right: 15%;
+    }
+    #menuszoveg{
+        width: 170%;
     }
 }
 
