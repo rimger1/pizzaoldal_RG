@@ -27,7 +27,7 @@ body{
     margin-left: 15%;
     text-align: right;
 }
-#pizzakbalp{
+#pizzakjobbp{
     max-width: 600px;
 }
 #pizzakjobb{
@@ -40,10 +40,10 @@ body{
 #menu{
     background-color: rgb(16, 16, 16);
     text-align: center;
-    height: 400px;
+    height: 350px;
 }
 #menuiras{
-    width: 50%;
+    width: 90%;
     margin: 0 auto;
 }
 #menucim{
@@ -52,6 +52,8 @@ body{
 #menuszoveg{
     line-height: 1.5;
     font-size: larger;
+    width: 90%;
+    margin: 0 auto;
 }
 #gombok{
     margin-top: 50px;
@@ -146,12 +148,30 @@ a{
         text-align: left;
         margin-right: 15%;
     }
+    #menuiras{
+        width: 100%;
+    }
     #menuszoveg{
-        width: 170%;
+        width: 90%;
+        margin: 0 auto;
+    }
+    #gomb{
+        padding: 20px 8%;
     }
 }
+@media only screen and (min-width: 350px) and (max-width: 768px){
+    #pizzakbal{
+        float: right;
+        display: block;
+    }
+    #pizzakbal{
 
-
+    }
+    #telszam{
+        float: left;
+        display: ;
+    }
+}
 
 
 
