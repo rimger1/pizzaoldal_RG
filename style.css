@@ -159,17 +159,39 @@ a{
         padding: 20px 8%;
     }
 }
-@media only screen and (min-width: 350px) and (max-width: 768px){
+@media only screen and (min-width: 576px) and (max-width: 768px){
+
+}
+
+@media only screen and (min-width: 350px) and (max-width: 576px){
+    #pizzak{
+        height: 170%;
+        min-height: 450px;
+    }
     #pizzakbal{
         float: right;
         display: block;
+        margin-right: 4%;
+        height: 120px;
     }
-    #pizzakbal{
-
+    #pizzakjobbp{
+        margin-left: 4%;
+        margin-bottom: 0;
     }
     #telszam{
         float: left;
-        display: ;
+        display: block;
+        margin-left: 4%;
+    }
+    #menu{
+        height: 900px;
+    }
+    #gombok{
+        padding: 0;
+    }
+    #gomb{
+        display: block;
+        margin-top: 50px;
     }
 }
 
