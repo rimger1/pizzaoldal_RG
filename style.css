@@ -15,7 +15,7 @@ body{
 #pizzak{
     background-color: rgb(34, 34, 34);
     margin: 0px 0px 50px 0px;
-    height: 300px;
+   /*  height: 300px; */
     padding-top: 60px;
     line-height: 1.5;
 }
@@ -68,6 +68,19 @@ body{
 }
 #spec{
     background-color: rgb(34, 34, 34);
+    text-align: center;
+    padding-top: 20px;
+}
+#galery{
+    display: grid;
+    grid-template-columns: repeat(9, 10%);
+    grid-template-rows: repeat(9, 10%);
+    grid-gap: 5px;
+}
+.galery_kep{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 #nyitva{
     background-color: rgb(16, 16, 16);
@@ -87,6 +100,9 @@ h3{
 }
 img{
     height: 70px;
+}
+#telszam{
+    color: white;
 }
 #menulista{
     list-style-type: none;
@@ -165,8 +181,7 @@ a{
 
 @media only screen and (min-width: 350px) and (max-width: 576px){
     #pizzak{
-        height: 170%;
-        min-height: 450px;
+        height: 750px;
     }
     #pizzakbal{
         float: right;
