@@ -13,12 +13,10 @@ body{
     background-position: center;
 }
 #pizzak{
-    /*background-color: rgb(34, 34, 34);*/
+    background-color: rgb(34, 34, 34);
     padding-top: 60px;
-    background-color: wheat;
     padding-bottom: 2%;
     line-height: 1.5;
-    /*clear: both;*/
 }
 #pizzakbal{
     margin: 0;
@@ -87,6 +85,8 @@ body{
     object-fit: cover;
 }
 #galery_kep1{
+    background-image: url(img/pizza.jpg);
+    background-size: cover;
     grid-column-start: 1;
     grid-column-end: 7;
     grid-row-start: 1;
@@ -210,12 +210,36 @@ a{
     }
 }
 @media only screen and (min-width: 576px) and (max-width: 768px){
-
+    #pizzak{
+        height: 500px;
+    }
+    #pizzakbal{
+        float: left;
+        display: inline;
+        text-align: right;
+        margin-left: -10%;
+        max-width: 250px;
+    }    
+    #pizzakjobb{
+        float: right;
+        width: 55%;
+        display: inline;
+        text-align: left;
+        margin-right: 5%;
+    }
+    #gomb{
+        padding: 20px 6%;
+    }
+    #galery{
+        grid-template-columns: repeat(10, 45px);
+        grid-template-rows: repeat(9, 45px);
+        width: 540px;
+    }
 }
 
 @media only screen and (min-width: 350px) and (max-width: 576px){
     #pizzak{
-        padding-bottom: 220%;
+        height: 580px;
     }
     #pizzakbal{
         float: right;
@@ -243,6 +267,23 @@ a{
         margin-top: 50px;
     }
 }
+
+@media only screen and (min-width: 350px) and (max-width: 400px){
+    #pizzak{
+        height: 680px;
+    }
+}
+@media only screen and (min-width: 400px) and (max-width: 450px){
+    #pizzak{
+        height: 580px;
+    }
+}
+@media only screen and (min-width: 520px) and (max-width: 576px){
+    #pizzak{
+        height: 480px;
+    }
+}
+
 
 
 
