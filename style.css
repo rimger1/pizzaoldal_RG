@@ -147,10 +147,68 @@ body{
 }
 #nyitva{
     background-color: rgb(16, 16, 16);
+    display: grid;
+    grid-template-columns: repeat(11,70px);
+    grid-template-rows: repeat(7,70px);
+    grid-gap: 10px;
+    width: 870px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+#nyit{
+    font-weight: bold;
+    color: #fff;
+    padding-bottom: 30px;
+}
+#foglalj{
+    color: #fff;
+    text-decoration: underline white 1px;
+}
+#nyitvabal{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: right;
+}
+#nyitvakozep{
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 8;
+}
+#nyitvajobb{
+    grid-column-start: 8;
+    grid-column-end: 12 ;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+ul{
+    list-style-type: none;
+}
+.vonal{
+    border-bottom: white 1px solid ;
+    width: 200px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+#nincsvonal{
+    width: 200px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+}
+#alsocsik{
+    width: 70%;
 }
 #lablec{
     background-color: rgb(16, 16, 16);
     text-align: center;
+    font-size: 15px;
+    padding: 30px;
+}
+#webnode{
+    text-decoration: underline 1px;
 }
 h1{
     color: rgb(255, 255, 255);
