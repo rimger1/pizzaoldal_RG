@@ -12,6 +12,31 @@ body{
     background-repeat: no-repeat;
     background-position: center;
 }
+#cimesmenu{
+    padding-top: 1%;
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: repeat(1, 70px);
+}
+#focim{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-left: 4%;
+}
+#menulista{
+    padding: 0px;
+    list-style-type: none;
+    display: inline;
+    grid-column-start: 19;
+    grid-column-end: 25;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+#kezdolap{
+    color: rgb(255, 255, 255);
+}
 #pizzak{
     background-color: rgb(34, 34, 34);
     padding-top: 60px;
@@ -225,13 +250,6 @@ img{
 #telszam{
     color: white;
 }
-#menulista{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    float: right;
-}
 #menupont{
     display: inline;
 } 
@@ -239,20 +257,9 @@ li a{
     display: inline;
     padding: 8px;
 }
-#focim{
-    display: inline;
-    margin-left: 4%;
-}
-#cimesmenu{
-    padding-top: 4%;
-}
 a{
     color: rgb(204, 204, 204);
     text-decoration: none;
-}
-#kezdolap{
-    color: rgb(255, 255, 255);
-    display: inline;
 }
 @media only screen and (min-width: 992px) and (max-width: 1189px){
     #pizzak{
