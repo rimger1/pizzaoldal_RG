@@ -43,6 +43,8 @@ body{
     padding-bottom: 2%;
     line-height: 1.5;
     height: 350px;
+    display: flex;
+    justify-content: center;
 }
 #pizzakbal{
     margin-left: 13%;
@@ -50,6 +52,7 @@ body{
     float: left;
     display: inline;
     text-align: right;
+    justify-content: flex-end;
 }
 #pizzakjobbp{
     max-width: 550px;
@@ -60,6 +63,8 @@ body{
     float: right;
     display: inline;
     margin-right: 15%;
+    justify-content: flex-start;
+    padding-left: 40px;
 }
 #menu{
     background-color: rgb(16, 16, 16);
@@ -302,6 +307,11 @@ a{
     #gomb{
         padding: 20px 8%;
     }
+    #galery{
+        grid-template-columns: repeat(10, 50px);
+        grid-template-rows: repeat(9, 50px);
+        width: 635px;
+    }
 }
 @media only screen and (min-width: 576px) and (max-width: 768px){
     #pizzak{
@@ -325,15 +335,51 @@ a{
         padding: 20px 6%;
     }
     #galery{
-        grid-template-columns: repeat(10, 45px);
-        grid-template-rows: repeat(9, 45px);
-        width: 540px;
+        grid-template-columns: repeat(10, 40px);
+        grid-template-rows: repeat(9, 40px);
+        width: 535px;
     }
+    #nyitva{
+        display: grid;
+        grid-template-columns: repeat(11,1fr);
+        grid-template-rows: repeat(7, 0.4fr);
+        grid-gap: 10px;
+        width: /*540px*/95%;
+    }
+    #foglalj{
+        color: #fff;
+        text-decoration: underline white 1px;
+    }
+    #nyitvabal{
+        font-size: medium;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        text-align: right;
+        padding-right: 8%;
+    }
+    #nyitvakozep{
+        grid-column-start: 4;
+        grid-column-end: 7;
+        grid-row-start: 1;
+        grid-row-end: 8;
+    }
+    #nyitvajobb{
+        grid-column-start: 8;
+        grid-column-end: 12 ;
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }
+    .vonal{
+        width: 150px;
+    }    
 }
 
 @media only screen and (min-width: 350px) and (max-width: 576px){
     #pizzak{
         height: 580px;
+        flex-direction: column;
     }
     #pizzakbal{
         float: right;
@@ -360,6 +406,41 @@ a{
         display: block;
         margin-top: 50px;
     }
+    #galery{
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+        }
+    #galery_kep1{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: 300px;
+    }
+    #galery_kep2{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: 300px;
+    }
+    #galery_kep3{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: 300px;
+    }
+    #galery_kep4{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: 300px;
+    }
+    #galery_kep5{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: 300px;
+    }
+
+
+    #alsocsik{
+        width: 90%;
+    }
 }
 
 @media only screen and (min-width: 350px) and (max-width: 400px){
@@ -377,14 +458,3 @@ a{
         height: 480px;
     }
 }
-
-
-
-
-/*   34, 34, 34 
-16, 16, 16
-sotet rgb 16 16 16 
-vilaos 34 34 34
-cim 255 255 255
-szoveg 204 204 204 
-*/
