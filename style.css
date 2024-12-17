@@ -14,25 +14,18 @@ body{
 }
 #cimesmenu{
     padding-top: 1%;
-    display: grid;
-    grid-template-columns: repeat(24, 1fr);
-    grid-template-rows: repeat(1, 70px);
+    display: flex;
 }
 #focim{
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
+    justify-content: flex-end;
+    display: inline;
     margin-left: 4%;
 }
 #menulista{
+    justify-content: flex-start;
     padding: 0px;
     list-style-type: none;
     display: inline;
-    grid-column-start: 19;
-    grid-column-end: 25;
-    grid-row-start: 1;
-    grid-row-end: 2;
 }
 #kezdolap{
     color: rgb(255, 255, 255);
@@ -86,6 +79,7 @@ body{
 }
 #gombok{
     margin-top: 50px;
+    padding: 0px;
 }
 #gomb{
     color: white;
@@ -202,6 +196,7 @@ body{
     text-align: right;
 }
 #nyitvakozep{
+    padding: 0;
     grid-column-start: 4;
     grid-column-end: 7;
     grid-row-start: 1;
@@ -312,6 +307,37 @@ a{
         grid-template-rows: repeat(9, 50px);
         width: 635px;
     }
+    #nyitva{
+        grid-template-columns: repeat(11,1fr);
+        grid-template-rows: repeat(7,70px);
+        width: /*740px*/ 98%;
+    }
+    #nyitvabal{
+        font-size: medium;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        text-align: right;
+        padding-right: 8%;
+    }
+    #nyitvakozep{
+        grid-column-start: 4;
+        grid-column-end: 7;
+        grid-row-start: 1;
+        grid-row-end: 8;
+    }
+    #nyitvajobb{
+        text-align: left;
+        grid-column-start: 7;
+        grid-column-end: 12;
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }
+    .vonal{
+        width: 150px;
+    }    
+
 }
 @media only screen and (min-width: 576px) and (max-width: 768px){
     #pizzak{
@@ -344,11 +370,7 @@ a{
         grid-template-columns: repeat(11,1fr);
         grid-template-rows: repeat(7, 0.4fr);
         grid-gap: 10px;
-        width: /*540px*/95%;
-    }
-    #foglalj{
-        color: #fff;
-        text-decoration: underline white 1px;
+        width: 95%;
     }
     #nyitvabal{
         font-size: medium;
