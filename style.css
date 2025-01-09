@@ -21,11 +21,15 @@ body{
     display: inline;
     margin-left: 4%;
 }
-#menulista{
-    justify-content: flex-start;
-    padding: 0px;
-    list-style-type: none;
-    display: inline;
+#menulista,
+#menulista::after,
+#menulista::before{
+    box-sizing: border-box;
+}
+:root{
+    --bar-width:60px;
+    --bar-height:8px;
+    --hamburger-gap:6px;
 }
 #kezdolap{
     color: rgb(255, 255, 255);
@@ -458,7 +462,16 @@ a{
         margin-bottom: 20px;
         height: 300px;
     }
-
+    #nyitva{
+        display: block;
+        width: 90%;
+    }
+    #nyitvabal{
+        text-align: right;
+    }
+    #nyitvatartas{
+        padding: 0;
+    }
 
     #alsocsik{
         width: 90%;
