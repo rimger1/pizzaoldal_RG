@@ -21,19 +21,45 @@ body{
     display: inline;
     margin-left: 4%;
 }
-#menulista,
-#menulista::after,
-#menulista::before{
+#hamburgermenu>li{
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
-:root{
-    --bar-width:60px;
-    --bar-height:8px;
-    --hamburger-gap:6px;
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
 }
-#kezdolap{
+nav a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+}
+input[type="checkbox"]{
+    appearance: none;
+    -webkit-appearance: none;
+}
+label{
+    display: none;
+    cursor: pointer;
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+ul a{
+    pad: 0.5em;
+}
+ul a:hover{
+    background-color: #333;
+    border-radius: 0.5em;
+}
+/*#kezdolap{
     color: rgb(255, 255, 255);
-}
+}*/
 #pizzak{
     background-color: rgb(34, 34, 34);
     padding-top: 60px;
@@ -254,9 +280,9 @@ img{
 #telszam{
     color: white;
 }
-#menupont{
+/*#menupont{
     display: inline;
-} 
+} */
 li a{
     display: inline;
     padding: 8px;
@@ -344,6 +370,25 @@ a{
 
 }
 @media only screen and (min-width: 576px) and (max-width: 768px){
+    label{
+        display: block;
+    }
+    ul{
+        font-size: 1.2em;
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        background-color: #333;
+        left: -100%;
+        gap: 2em;
+        top: 60px;
+        width: 30%;
+        height: calc(100vh-50px);
+        transition: 0.5s;
+    }
+    input[type="checkbox"]:checked ul{
+        left: 0;
+    }
     #pizzak{
         height: 500px;
     }
