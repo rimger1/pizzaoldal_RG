@@ -474,7 +474,16 @@ body{
     margin-bottom: 20px;
     height: 300px;
     }
-    
+    #nyitva{
+        display: block;
+        width: 90%;
+    }
+    #nyitvabal{
+        text-align: right;
+    }
+    #nyitvatartas{
+        padding: 0;
+    }
     
     #alsocsik{
     width: 90%;
