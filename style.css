@@ -4,58 +4,44 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
     font-size: larger;
-}
-#fejlec{
+    }
+    #fejlec{
     background-image: url(img/pizza.jpg);
     width: 100%;
     height: 600px;
     background-repeat: no-repeat;
     background-position: center;
-}
-#cimesmenu{
+    }
+    #cimesmenu{
     padding-top: 1%;
-    display: flex;
-}
-#focim{
-    justify-content: flex-end;
-    display: inline;
+        display: grid;
+        grid-template-columns: repeat(24, 1fr);
+        grid-template-rows: repeat(1, 70px);
+        display: flex;
+    }
+    #focim{
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        justify-content: flex-end;
+        display: inline;
     margin-left: 4%;
-}
-#menulista{
-    justify-content: flex-start;
+    }
+    #menulista{
+        justify-content: flex-start;
     padding: 0px;
     list-style-type: none;
     display: inline;
-}
-nav a{
-    text-decoration: none;
-    text-transform: capitalize;
-    color: #fff;
-}
-input[type="checkbox"]{
-    appearance: none;
-    -webkit-appearance: none;
-}
-label{
-    display: none;
-    cursor: pointer;
-}
-ul{
-    list-style: none;
-    display: flex;
-    gap: 1em;
-}
-ul a{
-    pad: 0.5em;
-}
-ul a:hover{
-    background-color: #333;
-    border-radius: 0.5em;
-}
-/*#kezdolap{
+        grid-column-start: 19;
+        grid-column-end: 25;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    #kezdolap{
     color: rgb(255, 255, 255);
-}*/
-#pizzak{
+    }
+    #pizzak{
     background-color: rgb(34, 34, 34);
     padding-top: 60px;
     padding-bottom: 2%;
@@ -63,19 +49,19 @@ ul a:hover{
     height: 350px;
     display: flex;
     justify-content: center;
-}
-#pizzakbal{
+    }
+    #pizzakbal{
     margin-left: 13%;
     padding: 0;
     float: left;
     display: inline;
     text-align: right;
     justify-content: flex-end;
-}
-#pizzakjobbp{
+    }
+    #pizzakjobbp{
     max-width: 550px;
-}
-#pizzakjobb{
+    }
+    #pizzakjobb{
     margin: 0px;
     padding: 0px;
     float: right;
@@ -83,62 +69,62 @@ ul a:hover{
     margin-right: 15%;
     justify-content: flex-start;
     padding-left: 40px;
-}
-#menu{
+    }
+    #menu{
     background-color: rgb(16, 16, 16);
     text-align: center;
     padding-bottom: 5%;
-}
-#menuiras{
+    }
+    #menuiras{
     width: 90%;
     margin: 0 auto;
-}
-#menucim{
+    }
+    #menucim{
     line-height: 1;
-}
-#menuszoveg{
+    }
+    #menuszoveg{
     line-height: 1.5;
     font-size: larger;
     width: 90%;
     margin: 0 auto;
-}
-#gombok{
+    }
+    #gombok{
     margin-top: 50px;
-    padding: 0px;
-}
-#gomb{
+        padding: 0px;
+    }
+    #gomb{
     color: white;
     list-style-type: none;
     display: inline;
     border: solid white 1px;
     padding: 20px 70px;
     margin: 0 20px;
-}
-#spec{
+    }
+    #spec{
     background-color: rgb(34, 34, 34);
     text-align: center;
     padding-top: 20px;
     padding-bottom: 5%;
-}
-#galery{
+    }
+    #galery{
     display: grid;
     grid-template-columns: repeat(10, 70px);
     grid-template-rows: repeat(9, 70px);
     grid-gap: 15px;
     margin: 0 auto;
     width: 836px;
-}
-#galery div{
+    }
+    #galery div{
     display: flex;
     align-items: flex-end;
     justify-content: center;
-}
-.galery_kep{
+    }
+    .galery_kep{
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-#galery_kep1{   
+    }
+    #galery_kep1{   
     background-position: center;
     display: inline;
     background-image: url(img/pizza.jpg);
@@ -147,8 +133,8 @@ ul a:hover{
     grid-column-end: 7;
     grid-row-start: 1;
     grid-row-end: 6;
-}
-#galery_kep2{
+    }
+    #galery_kep2{
     background-position: center;
     display: inline;
     background-image: url(img/vorosboros.jpg);
@@ -157,8 +143,8 @@ ul a:hover{
     grid-column-end: 11;
     grid-row-start: 1;
     grid-row-end: 7;
-}
-#galery_kep3{
+    }
+    #galery_kep3{
     background-position: center;
     display: inline;
     background-image: url(img/vegyes.jpg);
@@ -167,8 +153,8 @@ ul a:hover{
     grid-column-end: 4;
     grid-row-start: 6;
     grid-row-end: 10;
-}
-#galery_kep4{
+    }
+    #galery_kep4{
     background-position: center;
     display: inline;
     background-image: url(img/pizza2.jpg);
@@ -177,8 +163,8 @@ ul a:hover{
     grid-column-end: 7;
     grid-row-start: 6;
     grid-row-end: 10;
-}
-#galery_kep5{
+    }
+    #galery_kep5{
     background-position: center;
     display: inline;
     background-image: url(img/eloetel.jpg);
@@ -187,14 +173,14 @@ ul a:hover{
     grid-column-end: 11;
     grid-row-start: 7;
     grid-row-end: 10;
-}
-#galery_szoveg{
+    }
+    #galery_szoveg{
     font-weight: large;
     font-style: italic;
     font-family: 'Times New Roman', Times, serif;
     color: #fff;
-}
-#nyitva{
+    }
+    #nyitva{
     background-color: rgb(16, 16, 16);
     display: grid;
     grid-template-columns: repeat(11,70px);
@@ -203,324 +189,310 @@ ul a:hover{
     width: 870px;
     margin: 0 auto;
     padding-top: 20px;
-}
-#nyit{
+    }
+    #nyit{
     font-weight: bold;
     color: #fff;
     padding-bottom: 30px;
-}
-#foglalj{
+    }
+    #foglalj{
     color: #fff;
     text-decoration: underline white 1px;
-}
-#nyitvabal{
+    }
+    #nyitvabal{
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
     text-align: right;
-}
-#nyitvakozep{
-    padding: 0;
+    }
+    #nyitvakozep{
+        padding: 0;
     grid-column-start: 4;
     grid-column-end: 7;
     grid-row-start: 1;
     grid-row-end: 8;
-}
-#nyitvajobb{
+    }
+    #nyitvajobb{
     grid-column-start: 8;
     grid-column-end: 12 ;
     grid-row-start: 1;
     grid-row-end: 4;
-}
-ul{
+    }
+    ul{
     list-style-type: none;
-}
-.vonal{
+    }
+    .vonal{
     border-bottom: white 1px solid ;
     width: 200px;
     padding-bottom: 10px;
     padding-top: 10px;
-}
-#nincsvonal{
+    }
+    #nincsvonal{
     width: 200px;
     padding-bottom: 10px;
     padding-top: 10px;
-
-}
-#alsocsik{
+    
+    }
+    #alsocsik{
     width: 70%;
-}
-#lablec{
+    }
+    #lablec{
     background-color: rgb(16, 16, 16);
     text-align: center;
     font-size: 15px;
     padding: 30px;
-}
-#webnode{
+    }
+    #webnode{
     text-decoration: underline 1px;
-}
-h1{
+    }
+    h1{
     color: rgb(255, 255, 255);
-}
-h2{
+    }
+    h2{
     color: rgb(255, 255, 255);
-}
-h3{
+    }
+    h3{
     color: rgb(255, 255, 255);
-}
-img{
+    }
+    img{
     height: 70px;
-}
-#telszam{
-    color: white;
-}
-/*#menupont{
-    display: inline;
-} */
-li a{
-    display: inline;
-    padding: 8px;
-}
-a{
-    color: rgb(204, 204, 204);
-    text-decoration: none;
-}
-@media only screen and (min-width: 992px) and (max-width: 1189px){
-    #pizzak{
-        height: 350px;
-    }
-    #pizzakbal{
-        margin-left: 4%;
-    }
-    #pizzakjobb{
-        width: 55%;
-        margin-right: 10%;
-    }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 992px){
-    #pizzak{
-        height: 400px;
-    }
-    #pizzakbal{
-        float: left;
-        display: inline;
-        text-align: right;
-        margin-left: -5%;
-        max-width: 250px;
-    }    
-    #pizzakjobb{
-        float: right;
-        width: 55%;
-        display: inline;
-        text-align: left;
-        margin-right: 15%;
-    }
-    #menuiras{
-        width: 100%;
-    }
-    #menuszoveg{
-        width: 90%;
-        margin: 0 auto;
-    }
-    #gomb{
-        padding: 20px 8%;
-    }
-    #galery{
-        grid-template-columns: repeat(10, 50px);
-        grid-template-rows: repeat(9, 50px);
-        width: 635px;
-    }
-    #nyitva{
-        grid-template-columns: repeat(11,1fr);
-        grid-template-rows: repeat(7,70px);
-        width: /*740px*/ 98%;
-    }
-    #nyitvabal{
-        font-size: medium;
-        grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        text-align: right;
-        padding-right: 8%;
-    }
-    #nyitvakozep{
-        grid-column-start: 4;
-        grid-column-end: 7;
-        grid-row-start: 1;
-        grid-row-end: 8;
-    }
-    #nyitvajobb{
-        text-align: left;
-        grid-column-start: 7;
-        grid-column-end: 12;
-        grid-row-start: 1;
-        grid-row-end: 4;
-    }
-    .vonal{
-        width: 150px;
-    }    
-
-}
-@media only screen and (min-width: 576px) and (max-width: 768px){
-    label{
-        display: block;
-    }
-    ul{
-        font-size: 1.2em;
-        position: absolute;
-        flex-direction: column;
-        align-items: center;
-        background-color: #333;
-        left: -100%;
-        gap: 2em;
-        top: 60px;
-        width: 30%;
-        height: calc(100vh-50px);
-        transition: 0.5s;
-    }
-    input[type="checkbox"]:checked ul{
-        left: 0;
-    }
-    #pizzak{
-        height: 500px;
-    }
-    #pizzakbal{
-        float: left;
-        display: inline;
-        text-align: right;
-        margin-left: -10%;
-        max-width: 250px;
-    }    
-    #pizzakjobb{
-        float: right;
-        width: 55%;
-        display: inline;
-        text-align: left;
-        margin-right: 5%;
-    }
-    #gomb{
-        padding: 20px 6%;
-    }
-    #galery{
-        grid-template-columns: repeat(10, 40px);
-        grid-template-rows: repeat(9, 40px);
-        width: 535px;
-    }
-    #nyitva{
-        display: grid;
-        grid-template-columns: repeat(11,1fr);
-        grid-template-rows: repeat(7, 0.4fr);
-        grid-gap: 10px;
-        width: 95%;
-    }
-    #nyitvabal{
-        font-size: medium;
-        grid-column-start: 1;
-        grid-column-end: 5;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        text-align: right;
-        padding-right: 8%;
-    }
-    #nyitvakozep{
-        grid-column-start: 4;
-        grid-column-end: 7;
-        grid-row-start: 1;
-        grid-row-end: 8;
-    }
-    #nyitvajobb{
-        grid-column-start: 8;
-        grid-column-end: 12 ;
-        grid-row-start: 1;
-        grid-row-end: 4;
-    }
-    .vonal{
-        width: 150px;
-    }    
-}
-
-@media only screen and (min-width: 350px) and (max-width: 576px){
-    #pizzak{
-        height: 580px;
-        flex-direction: column;
-    }
-    #pizzakbal{
-        float: right;
-        display: block;
-        margin-right: 4%;
-        height: 120px;
-    }
-    #pizzakjobbp{
-        margin-left: 4%;
-        margin-bottom: 0;
     }
     #telszam{
-        float: left;
-        display: block;
-        margin-left: 4%;
+    color: white;
     }
-    #menu{
-        padding-bottom: 20%;
+    #menupont{
+    display: inline;
+    } 
+    li a{
+    display: inline;
+    padding: 8px;
     }
-    #gombok{
-        padding: 0;
+    a{
+    color: rgb(204, 204, 204);
+    text-decoration: none;
+    }
+    @media only screen and (min-width: 992px) and (max-width: 1189px){
+    #pizzak{
+    height: 350px;
+    }
+    #pizzakbal{
+    margin-left: 4%;
+    }
+    #pizzakjobb{
+    width: 55%;
+    margin-right: 10%;
+    }
+    }
+    
+    @media only screen and (min-width: 768px) and (max-width: 992px){
+    #pizzak{
+    height: 400px;
+    }
+    #pizzakbal{
+    float: left;
+    display: inline;
+    text-align: right;
+    margin-left: -5%;
+    max-width: 250px;
+    }    
+    #pizzakjobb{
+    float: right;
+    width: 55%;
+    display: inline;
+    text-align: left;
+    margin-right: 15%;
+    }
+    #menuiras{
+    width: 100%;
+    }
+    #menuszoveg{
+    width: 90%;
+    margin: 0 auto;
     }
     #gomb{
-        display: block;
-        margin-top: 50px;
+    padding: 20px 8%;
     }
     #galery{
-        display: block;
-        margin: 0 auto;
-        width: 80%;
+    grid-template-columns: repeat(10, 50px);
+    grid-template-rows: repeat(9, 50px);
+    width: 635px;
+    }
+        #nyitva{
+            grid-template-columns: repeat(11,1fr);
+            grid-template-rows: repeat(7,70px);
+            width: /*740px*/ 98%;
         }
+        #nyitvabal{
+            font-size: medium;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            text-align: right;
+            padding-right: 8%;
+        }
+        #nyitvakozep{
+            grid-column-start: 4;
+            grid-column-end: 7;
+            grid-row-start: 1;
+            grid-row-end: 8;
+        }
+        #nyitvajobb{
+            text-align: left;
+            grid-column-start: 7;
+            grid-column-end: 12;
+            grid-row-start: 1;
+            grid-row-end: 4;
+        }
+        .vonal{
+            width: 150px;
+        }    
+    
+    }
+    @media only screen and (min-width: 576px) and (max-width: 768px){
+    #pizzak{
+    height: 500px;
+    }
+    #pizzakbal{
+    float: left;
+    display: inline;
+    text-align: right;
+    margin-left: -10%;
+    max-width: 250px;
+    }    
+    #pizzakjobb{
+    float: right;
+    width: 55%;
+    display: inline;
+    text-align: left;
+    margin-right: 5%;
+    }
+    #gomb{
+    padding: 20px 6%;
+    }
+    #galery{
+    grid-template-columns: repeat(10, 40px);
+    grid-template-rows: repeat(9, 40px);
+    width: 535px;
+    }
+    #nyitva{
+    display: grid;
+    grid-template-columns: repeat(11,1fr);
+    grid-template-rows: repeat(7, 0.4fr);
+    grid-gap: 10px;
+            width: /*540px*/95%;
+        }
+        #foglalj{
+            color: #fff;
+            text-decoration: underline white 1px;
+            width: 95%;
+    }
+    #nyitvabal{
+    font-size: medium;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: right;
+    padding-right: 8%;
+    }
+    #nyitvakozep{
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 8;
+    }
+    #nyitvajobb{
+    grid-column-start: 8;
+    grid-column-end: 12 ;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    }
+    .vonal{
+    width: 150px;
+    }    
+    }
+    
+    @media only screen and (min-width: 350px) and (max-width: 576px){
+    #pizzak{
+    height: 580px;
+    flex-direction: column;
+    }
+    #pizzakbal{
+    float: right;
+    display: block;
+    margin-right: 4%;
+    height: 120px;
+    }
+    #pizzakjobbp{
+    margin-left: 4%;
+    margin-bottom: 0;
+    }
+    #telszam{
+    float: left;
+    display: block;
+    margin-left: 4%;
+    }
+    #menu{
+    padding-bottom: 20%;
+    }
+    #gombok{
+    padding: 0;
+    }
+    #gomb{
+    display: block;
+    margin-top: 50px;
+    }
+    #galery{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    }
     #galery_kep1{
-        margin-top: 20px;
-        margin-bottom: 20px;
-        height: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 300px;
     }
     #galery_kep2{
-        margin-top: 20px;
-        margin-bottom: 20px;
-        height: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 300px;
     }
     #galery_kep3{
-        margin-top: 20px;
-        margin-bottom: 20px;
-        height: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 300px;
     }
     #galery_kep4{
-        margin-top: 20px;
-        margin-bottom: 20px;
-        height: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 300px;
     }
     #galery_kep5{
-        margin-top: 20px;
-        margin-bottom: 20px;
-        height: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 300px;
     }
-
-
+    
+    
     #alsocsik{
-        width: 90%;
+    width: 90%;
     }
-}
-
-@media only screen and (min-width: 350px) and (max-width: 400px){
+    }
+    
+    @media only screen and (min-width: 350px) and (max-width: 400px){
     #pizzak{
-        height: 680px;
+    height: 680px;
     }
-}
-@media only screen and (min-width: 400px) and (max-width: 450px){
+    }
+    @media only screen and (min-width: 400px) and (max-width: 450px){
     #pizzak{
-        height: 580px;
+    height: 580px;
     }
-}
-@media only screen and (min-width: 520px) and (max-width: 576px){
+    }
+    @media only screen and (min-width: 520px) and (max-width: 576px){
     #pizzak{
-        height: 480px;
+    height: 480px;
     }
-}
+    }
