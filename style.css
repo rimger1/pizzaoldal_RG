@@ -21,24 +21,11 @@ body{
     display: inline;
     margin-left: 4%;
 }
-<<<<<<< HEAD
 #menulista{
     justify-content: flex-start;
     padding: 0px;
     list-style-type: none;
     display: inline;
-=======
-#hamburgermenu>li{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1em;
->>>>>>> c817dca2812e486b89056ffecd35da5510f3335d
 }
 nav a{
     text-decoration: none;
